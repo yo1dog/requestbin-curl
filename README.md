@@ -2,9 +2,9 @@
 
 Generate [cURL](https://curl.haxx.se/) commands for [RequestBin](http://requestb.in) captured requests to easily replay them. Just copy+paste the URL!
 
-```
-node requestbinCurl.js http://requestb.in/1234asdf?inspect#13mgnv
-```
+`node requestbinCurl.js http://requestb.in/1234asdf`
+
+-----
 
 Often [RequestBin](http://requestb.in) is used to capture requests that can not be made directly to a locally-running server during development. For example, you may want to test how your server responds to a webhook request from a 3rd party service without having to make your server publicly accessible. However, there is no easy way to replay the request captured by RequestBin to your server. Enter **RequestBin cURL**.
 
