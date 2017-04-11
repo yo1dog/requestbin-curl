@@ -2,7 +2,9 @@
 
 Generate [cURL](https://curl.haxx.se/) commands for [RequestBin](http://requestb.in) captured requests to easily replay them. Just copy+paste the URL!
 
-`node requestbinCurl.js http://requestb.in/1234asdf`
+```bash
+node requestbinCurl.js http://requestb.in/1234asdf
+```
 
 -----
 
@@ -12,7 +14,7 @@ Often [RequestBin](http://requestb.in) is used to capture requests that can not 
 
 
 ## Usage
-```
+```bash
 node requestbinCurl.js http://requestb.in/1234asdf?inspect
 node requestbinCurl.js http://requestb.in/1234asdf?inspect#13mgnv -p
 node requestbinCurl.js requestb.in/1234asdf
