@@ -5,7 +5,7 @@ node requestbinCurl.js http://requestb.in/1234asdf?inspect#13mgnv -p
 node requestbinCurl.js requestb.in/1234asdf`;
 
 
-const http = require('http');
+const https = require('https');
 
 // get the url form the command line arguments
 const url         = process.argv[2];
@@ -137,8 +137,8 @@ function getRBRequest(rbBinId, rbRequestId, cb) {
 }
   
 function callRBAPI(endpoint, cb) {
-  const url = `http://requestb.in/api/v1${endpoint}`;
-  const req = http.get(url, res => {
+  const url = `https://requestb.in/api/v1${endpoint}`;
+  const req = https.get(url, res => {
     res.setEncoding('utf8');
     
     let bodyStr = '';
